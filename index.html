@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cured</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- <img src="img/found.jfif" alt=""> -->
+ <section class="container w-50 my-5">
+
+<h1 class="  bg-danger text-info text-center py-3 m-auto my-4">Cured Operation</h1>
+
+<h3 class="successData text-warning alert d-none">
+  The data has been added successfully</h3>
+  <h3 class="errorData text-danger alert d-none ">The data has been added invalid</h3>
+
+<!-- ==========================Product Name====================== -->
+
+<div class="form-group position-relative">
+    <label class="my-2" for="pname">Product Name</label>
+    <input type="text" onkeyup="validationName()" class="form-control" name="pname" id="pName"
+    placeholder="">
+    
+   <small class="errName d-none text-danger" >error: must start capital and length 3:8 </small>
+  </div>
+<!-- ==========================product Price====================== -->
+
+  <div class="form-group my-2">
+
+    <label for="price">product Price</label>
+    <input type="number" onkeyup="validationPrice()"
+      class="form-control my-2" name="pPrice" id="price"  >
+      <small class="errPrice d-none text-danger" >error: price 1000:10000</small>
+  
+    </div>
+  <!-- ==========================Product Category====================== -->
+
+  <div class="form-group my-2">
+    <label for="pCat">Product Category</label>
+    <input  onkeyup="validationCat()"
+    type="text"class="form-control " name="pCat" id="pCat"
+    placeholder="">
+   <small class= "d-none  errCat text-danger">error:Category must be mobile or screen or watch</small>
+  
+  </div>
+ <!-- ==========================Product Descraption====================== -->
+
+  <div class="form-group my-2">
+    <label for="pDesc">Product Descraption</label>
+    <textarea onkeyup="validationDes()" class="form-control my-2" name="pDesc" id="pDesc" rows="3"></textarea>
+    <small class= "d-none  errDesc text-danger">error:max length 25 carachter</small>
+  
+  
+  </div>
+ <!-- ==========================button====================== -->
+
+
+ <button class="btn btn-info my-2 me-2 out-line " id="btn_add" onclick="addProduct()">
+ add Product</button>
+
+<button class="btn btn-info  my-2" onclick="clearProduct()">clear</button>
+
+
+</section>
+
+
+
+<section>
+<div class="form-group w-50 m-auto py-3 ">
+
+  <input type="search" 
+  onkeyup="searchProduct()"
+    class="form-control" name="" id="search" aria-describedby="helpId" placeholder="Search">
+  
+</div>
+
+<div class="table-responsive  ">
+  <table class="table table-striped container  m-auto text-center" >
+    <thead>
+      <tr>
+        <th scope="col">INDEX</th>
+        <th scope="col">NAME</th>
+        <th scope="col">PRICE</th>
+        <th scope="col">CATTEGORY</th>
+        <th scope="col">DESCRAPTION</th>
+        <th scope="col">UPDATE</th>
+        <th scope="col">DELETE</th>
+      </tr>
+    </thead>
+    <tbody id="demo">
+      <!-- <tr>
+        <td colspan="7">
+          <img src="img/download.jfif" alt="" class="w-50">
+        </td>
+      </tr> -->
+     
+
+       <!-- <tr class="">
+        <td scope="row">1</td>
+        <td>OPP1</td>
+        <td>5000</td>
+        <td>PHONE</td>
+        <td>GOOD</td>
+        <td><button class=" btn btn-success "id="update">Edit</button></td>
+        <td><button class=" btn btn-danger" onclick="deleteProduct(${i})" id="delete">Delete</button></td>
+        
+      </tr>  -->
+     
+    </tbody>
+  </table>
+</div>
+
+  
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- external js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

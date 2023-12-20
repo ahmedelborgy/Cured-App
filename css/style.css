@@ -1,0 +1,50 @@
+.btn-info{
+color:white;
+}
+
+.btn-info:hover{
+    color:white;
+}
+.btn-outline-info:hover{
+    color: white;
+}
+p{
+    text-transform: none;
+    text-transform: capitalize;
+}
+
+span{
+    
+}
+.spa{
+    text-transform:capitalize;
+}
+#demo{
+
+   
+}
+.form-control{
+    border: none;
+    border-bottom: 2px rgba(0, 0, 0, 0.562) solid;
+    outline: 0;
+}
+.form-control:focus{
+    border: 2px rgba(0, 0, 0, 0.562) solid;
+    
+}
+
+
+  
+  
+  
+  /* demo */
+  /* body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: #222222;
+  } */
